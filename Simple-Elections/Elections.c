@@ -1,4 +1,4 @@
-#include <cs50.c>
+#include <cs50.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -53,7 +53,7 @@ int main(int argc, string argv[])
     // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
-        string candidate = get_string("","Vote: ");
+        string candidate = get_string("Vote: ");
 
         // Check for invalid vote
         if (!vote(candidate))
